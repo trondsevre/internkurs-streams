@@ -62,7 +62,7 @@ public class StudentService {
                 .map(s -> s.getName())
                 .collect(Collectors.toList());
 
-        // Primitive typer kan mappes til boxed type (Integer), men her endrest Streamen til en IntStream
+        // Primitive typer kan mappes til boxed type (Integer), men her endres Streamen til en IntStream
         students
                 .stream()
                 .mapToInt(student -> student.getAge())
